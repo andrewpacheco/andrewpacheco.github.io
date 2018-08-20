@@ -179,33 +179,20 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #00d8ff 5px solid; }
-  .about-info .job:hover {
-    transform: scale(1.02); }
-
-.skill {
-  transition: all 0.5s ease-in-out;
-  align-items: center;
-  text-align: center; }
-
-.skill:hover {
-  transform: scale(1.05); }
+    .about-info .job:hover {
+      transform: scale(1.02); }
 
 .skills-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "skill1 skill2 skill3" "skill4 skill5 skill6";
-  grid-template-columns: repeat(3, 1fr);
-  /*.bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }*/ }
+  grid-template-columns: repeat(3, 1fr); }
+  .skills-info .skill {
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+    text-align: center; }
+    .skills-info .skill:hover {
+      transform: scale(1.05); }
   .skills-info .skill-1 {
     grid-area: skill1; }
   .skills-info .skill-2 {
@@ -255,6 +242,7 @@ main {
         color: #000; }
 
 .btn, .btn-dark, .btn-light {
+  transition: all 0.5s ease-in-out;
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
@@ -264,12 +252,12 @@ main {
     color: #000; }
 
 .btn-dark {
-  background: black;
+  background: #373737;
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
-  color: #333; }
+  background: #5e5e5e;
+  color: #fff; }
 
 #main-footer {
   text-align: center;
