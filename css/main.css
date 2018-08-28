@@ -90,6 +90,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -225,9 +228,11 @@ main {
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  opacity: 0.9; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
